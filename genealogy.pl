@@ -3,7 +3,7 @@ parent(eve,john).
 parent(eve,lisa).
 parent(john,anne).
 parent(john,pat).
-parent(pat,jacob)
+parent(pat,jacob).
 parent(carol,jacob).
 
 /*parent(X,pat).*/
@@ -28,3 +28,18 @@ isHead([Head|_], Head).
 isTail([_|Tail], Tail).
 isMember(Head,[Head|_]).
 isMember(X,[_|Tail]) :- isMember(X,Tail).
+
+concatenate([], L, L).
+concatenate([H|T], L, [H|ExtendedTail]) :- concatenate(T, L, ExtendedTail).
+
+prepend().
+prepend() :- prepend().
+
+addElement().
+addElement() :- addElement().
+
+hasLentgh().
+hasLentgh() :- hasLentgh().
+
+remove().
+remove() :- remove().
